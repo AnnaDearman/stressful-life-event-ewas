@@ -40,4 +40,4 @@ Run "grab_interaction_terms.sh" to extract the EWAS results for the SLE interact
 
 Run "ewasresults.R" to process results and run enrichment analyses.
 
-Run "clock_and_wbc_analyses.R" to run analyses of epigenetic clocks and leukoctes.
+Run "clock_and_wbc_analyses.R" to run analyses of epigenetic clocks and leukocytes.
