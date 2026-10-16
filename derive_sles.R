@@ -618,7 +618,7 @@ df$blood_sles_binary_2 <- case_when( # THIS IS OUR EWAS PHENOTYPE
   df$blood_sles_2 == 0 ~ 0
 )
 
-# Look at other risk and protective factors for stress and mental health
+# Derive covariates
 
 # Physical health
 
@@ -663,12 +663,9 @@ for( i in c(1:12) ){
 
 # Social support
 
-colnames( df )[ grep( "rely|undstnd|openup|scdas", colnames( df ) ) ]
+colnames( df )[ grep( "rely|undstnd|openup", colnames( df ) ) ]
 
-# scdascoh_dv and scdassat_dv: waves a, c (sat only), e, g, i, k
-# high missingness, especially wave a
-
-# other variables: waves b, e, k only
+# waves b, e, k only
 
 waves <- c( "b_", "e_", "k_" )
 for( i in waves ){
@@ -686,7 +683,7 @@ df[,paste0(i,"socialsupport")] <- as.numeric( scale( rowSums(
 )))
 }
 
-# Adiposity could affect EWAS signal - use waist-to-height ratio
+# Adiposity (could affect EWAS signal) - use waist-to-height ratio
 
 df$whr <- df$wstval / df$htval
 
