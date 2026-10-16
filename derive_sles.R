@@ -7,7 +7,7 @@ genotype_dir <- ""
 processed_dir <- ""
 output_dir <- ""
 
-# Read in first file
+# Read in main survey data file
 
 df <- read_dta( paste0( survey_dir, "/ApplicationNumber_sendout.dta" ) )
 
