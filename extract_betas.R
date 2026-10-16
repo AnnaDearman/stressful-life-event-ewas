@@ -10,9 +10,9 @@ mccartney <- lapply( list.files( "[directory name]", pattern="S221359", full.nam
 toexclude <- unique( c( mccartney[[1]]$IlmnID, mccartney[[2]][,1], mccartney[[3]][,1] ) )
 U1 <- U1[!rownames(U1) %in% toexclude,]
 U2 <- U2[!rownames(U2) %in% toexclude,]
-genotypedriven_aries <- read.csv("/storage/projects/USoc_omics/genotypedriven.csv") 
-genotypedriven_godmc <- read.csv("/storage/projects/USoc_omics/assoc_meta_all_probes_unique.csv") #
-genotypedriven <- unique( c( genotypedriven_aries$x, 
+genotypedriven_aries <- read.table("FOM.ALL.M.tab", header=T, sep="\t")
+genotypedriven_godmc <- read.csv("assoc_meta_all_probes.csv")
+genotypedriven <- unique( c( genotypedriven_aries$gene, 
                              genotypedriven_godmc$cpg 
                              ) )
 U1 <- U1[!rownames(U1) %in% genotypedriven,]
