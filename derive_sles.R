@@ -693,6 +693,7 @@ df$blood_hiqual <- as.numeric( case_when(
   df$wave == 2 ~ df$b_hiqual_dv,
   df$wave == 3 ~ df$c_hiqual_dv
 ) )
+df$blood_hiqual <- case_when( df$blood_hiqual == 9 ~ 6, TRUE ~ df$blood_hiqual )
 
 # Amend partner social support so that those without a partner have 
 # the median value
