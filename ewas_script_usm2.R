@@ -11,10 +11,6 @@ bet <- readRDS( "USM2betamatrixWinsorized.rds" )
 
 usm <- usm[ usm$id %in% colnames( bet ) , ]
 
-print(dim(usm))
-
-print(dim(bet))
-
 mod_covars <- list( 
  # Basic model
  model1 = c( "age", "age2", "sex_categorical", "blooddelay", "blooddelay_2", "B", "CD4T", "CD8T", "Mono", "nRBC", "Gran", "NK", "aCD4Tnv", "aBaso", "aCD4Tmem", "aBmem", "aBnv", "aTreg", "aCD8Tmem", "aCD8Tnv", "aEos", "aNK", "aMono" ), 
