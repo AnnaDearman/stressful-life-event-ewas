@@ -18,6 +18,7 @@ You will need to download:
  - all three supplementary table files from McCartney et al (2016) https://www.sciencedirect.com/science/article/pii/S221359601630071X
  - the ARIES middle-aged data file at http://www.mqtldb.org/db/PLINK/FOM.ALL.M.tab
  - the GoDMC data file at http://mqtldb.godmc.org.uk/downloads (choose "assoc_meta_all.csv.gz")
+
 in order to exclude polymorphic probes, cross-reactive probes, and genetically-influenced probes.
 Run the following line of code in the command line to unzip the GoDMC data and split into columns:
 
