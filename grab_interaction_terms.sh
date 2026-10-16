@@ -1,0 +1,10 @@
+cat usm1_model_4of4_linear.txt | grep blood_sles_binary_2: > usm1_model_4of4_interactions.txt
+cat usm2_model_4of4_linear.txt | grep blood_sles_binary_2: > usm2_model_4of4_interactions.txt
+cat usm1_model_sle-int-ghq_1of4_linear.txt | grep blood_sles_binary_2: > usm1_model_sle-int-ghq_1of4_interactions.txt
+cat usm1_model_sle-int-ghq_2of4_linear.txt | grep blood_sles_binary_2: > usm1_model_sle-int-ghq_2of4_interactions.txt
+cat usm1_model_sle-int-ghq_3of4_linear.txt | grep blood_sles_binary_2: > usm1_model_sle-int-ghq_3of4_interactions.txt
+cat usm1_model_sle-int-ghq_4of4_linear.txt | grep blood_sles_binary_2: > usm1_model_sle-int-ghq_4of4_interactions.txt
+cat usm2_model_sle-int-ghq_1of4_linear.txt | grep blood_sles_binary_2: > usm2_model_sle-int-ghq_1of4_interactions.txt
+cat usm2_model_sle-int-ghq_2of4_linear.txt | grep blood_sles_binary_2: > usm2_model_sle-int-ghq_2of4_interactions.txt
+cat usm2_model_sle-int-ghq_3of4_linear.txt | grep blood_sles_binary_2: > usm2_model_sle-int-ghq_3of4_interactions.txt
+cat usm2_model_sle-int-ghq_4of4_linear.txt | grep blood_sles_binary_2: > usm2_model_sle-int-ghq_4of4_interactions.txt
