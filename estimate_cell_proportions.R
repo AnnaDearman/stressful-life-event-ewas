@@ -8,20 +8,18 @@ rm(list = ls())
 # library( devtools )
 # install_github( "https://github.com/sjczheng/EpiDISH.git" )
 # install_github("sailalithabollepalli/EpiSmokEr")
-
-library( EpiDISH )
-library( bigmelon )
-library( haven )
-library( EpiSmokEr )
-library( dplyr )
-library( wateRmelon )
-library( DunedinPoAm38 )
-library( DunedinPACE )
-
-data("age_coefficients")
-
 # BiocManager::install("FlowSorted.Blood.450k") 
 
+library( bigmelon )
+library( dplyr )
+library( DunedinPACE )
+library( DunedinPoAm38 )
+library( EpiDISH )
+library( EpiSmokEr )
+library( haven )
+library( wateRmelon )
+
+data("age_coefficients")
 data( "centUniLIFE.m" )
 
 if( file.exists( "unilife.rdata" )){ load( "unilife.rdata" ) }
