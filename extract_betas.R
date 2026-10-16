@@ -9,9 +9,7 @@ U2 <- betas( USM2 )[ , ]
 mccartney <- lapply( list.files( "[directory name]", pattern="S221359", full.names=T ), function( x ) read.table( x, header=T ))
 toexclude <- unique( c( mccartney[[1]]$IlmnID, mccartney[[2]][,1], mccartney[[3]][,1] ) )
 U1 <- U1[!rownames(U1) %in% toexclude,]
-print(paste0("U1 now has ", nrow(U1), " rows"))
 U2 <- U2[!rownames(U2) %in% toexclude,]
-print(paste0("U2 now has ", nrow(U2), " rows"))
 genotypedriven_aries <- read.csv("/storage/projects/USoc_omics/genotypedriven.csv") 
 genotypedriven_godmc <- read.csv("/storage/projects/USoc_omics/assoc_meta_all_probes_unique.csv") #
 genotypedriven <- unique( c( genotypedriven_aries$x, 
