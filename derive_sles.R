@@ -28,7 +28,7 @@ df$sex_categorical <- case_when(
   df$sex == 2 & df$gtsex == 2 ~ "female" 
 )
 
-# CHILDHOOD CIRCUMSTANCES
+# Childhood circumstances
 
 # Family disruption / family intact
 
@@ -79,8 +79,9 @@ df$father_employed <- case_when(
   # and don't know)
 ) 
 
-# Based Stressful Life Events (SLEs) on Anderson et al (2022)
+# We based our measure of Stressful Life Events (SLEs) on Anderson et al (2022)
 # https://doi.org/10.1177/00221465211055993
+# with a few minor adjustments
 
 # Some SLEs were derived using deriving_complex_sle_variables.R and are
 # attached in the previously-imported file (now stored in R session as df).
