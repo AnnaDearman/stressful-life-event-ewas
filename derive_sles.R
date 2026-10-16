@@ -5,7 +5,7 @@ library( tidyr )
 survey_dir <- ""
 genotype_dir <- ""
 processed_dir <- ""
-output_dir <- "a"
+output_dir <- ""
 
 # Read in first file
 
