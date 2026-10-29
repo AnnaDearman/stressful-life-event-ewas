@@ -20,5 +20,5 @@ U2 <- U2[!rownames(U2) %in% genotypedriven,]
 
 U1w <- t(apply( U1, 1, Winsorize ))
 U2w <- t(apply( U2, 1, Winsorize ))
-saveRDS(U1w,"mh_epigenetics_project/data/USM1betamatrixWinsorized.rds")
-saveRDS(U2w,"mh_epigenetics_project/data/USM2betamatrixWinsorized.rds")
+saveRDS(U1w,"USM1betamatrixWinsorized.rds")
+saveRDS(U2w,"USM2betamatrixWinsorized.rds")
